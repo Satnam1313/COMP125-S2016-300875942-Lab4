@@ -1,0 +1,23 @@
+{
+  "name": "comp125-300875942-Lab04",
+  "authors": [
+    "Satnam Singh <satnamsingh13135@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  },
+  "private": true
+}
