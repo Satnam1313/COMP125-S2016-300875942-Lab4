@@ -7,7 +7,7 @@
  * 
  * StudentID: 300875942
  * github:- https://github.com/Satnam1313/COMP125-S2016-300875942-Lab4
- * website:
+ * website:http://comp125-s2016-300875942-lab4.azurewebsites.net/
  * @description This file is the main javascript file for the web site
  */
 
