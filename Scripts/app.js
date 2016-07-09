@@ -64,10 +64,14 @@
 
         // METHODS ++++++++++++++++++++++++++++++++
         form.prototype.info = function () {
-            console.log("User ID: " + this.name);
+            var userObject={
+            UserName:this.name,
+            UserPassword:this.password
+        }
+        console.log(userObject);
+        console.log("User ID: " + this.name);
             console.log("Password: " + this.password);
         }
-
         return form;
     } ());
 
