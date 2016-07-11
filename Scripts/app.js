@@ -15,8 +15,6 @@
 (function () {
     "use strict";
 
-
-
     // create a reference to the form
     var login = document.getElementById("Login");
 
@@ -37,43 +35,44 @@
             this.name = name;
             this.password = password;
         }
-        var checked=document.getElementById("showhide");
 
-        checked.addEventListener("click",toggle_password);
-        function toggle_password() {
-            
-            if (checked) {
-                document.getElementById('Password').type = "text";
-                checked=false;
-            }
-            else {
-                document.getElementById('Password').type = "password";
-                checked=true;
-            }
-        }
-
-        
-        /*   var person = {
-           name: "",
-           age: "",
-           info: function () {
-               console.log("User ID: "+ this.name );
-                console.log("Password: "+ this.password );
-           }
-       }*/
-
-        // METHODS ++++++++++++++++++++++++++++++++
+ 
         form.prototype.info = function () {
-            var userObject={
-            UserName:this.name,
-            UserPassword:this.password
-        }
-        console.log(userObject);
-        console.log("User ID: " + this.name);
+            var userObject = {
+                UserName: this.name,
+                UserPassword: this.password
+            }
+            console.log(userObject);
+            console.log("User ID: " + this.name);
             console.log("Password: " + this.password);
         }
         return form;
     } ());
+
+    
+        /**
+         * function user to toggle password
+         * 
+         */
+        var checked = document.getElementById("showhide");
+
+        checked.addEventListener("click", toggle_password);
+        function toggle_password() {
+
+            if (checked) {
+                document.getElementById('Password').type = "text";
+                checked = false;
+            }
+            else {
+                document.getElementById('Password').type = "password";
+                checked = true;
+            }
+        }
+
+
+
+
+       
 
     function LogIn() {
         var input = new form(username.value, Password.value);
